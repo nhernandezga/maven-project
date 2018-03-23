@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd"
+  xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <servers>
+  	<!--Maven Servers-->
+  	<server>
+  		<id>aula-snaps-mvn</id>
+        <username>desa</username>
+        <password>AulaNegoDesa2018</password>
+   	</server>
+    
+    <server>
+        <id>aula-rels-mvn</id>
+        <username>desa</username>
+        <password>AulaNegoDesa2018</password>          
+    </server>
+    
+    <server>
+  		<id>nego-snaps-mvn</id>
+        <username>desa</username>
+        <password>AulaNegoDesa2018</password>
+   	</server>
+    
+    <server>
+        <id>nego-rels-mvn</id>
+        <username>desa</username>
+        <password>AulaNegoDesa2018</password>          
+    </server>
+
+    <!--Gradle Servers-->
+  	<server>
+  		<id>aula-snaps-gdl</id>
+        <username>desa</username>
+        <password>AulaNegoDesa2018</password>
+   	</server>
+    
+    <server>
+        <id>aula-rels-gdl</id>
+        <username>desa</username>
+        <password>AulaNegoDesa2018</password>          
+    </server>
+    
+    <server>
+  		<id>nego-snaps-gdl</id>
+        <username>desa</username>
+        <password>AulaNegoDesa2018</password>
+   	</server>
+    
+    <server>
+        <id>nego-rels-gdl</id>
+        <username>desa</username>
+        <password>AulaNegoDesa2018</password>          
+    </server>
+  </servers>
+
+  <profiles>
+    <profile>
+    	<id>aula-mvn</id>
+    	
+    	<repositories>
+        	<repository>
+          		<snapshots>
+            		<enabled>false</enabled>
+          		</snapshots>
+          		<id>aula-snaps-mvn</id>
+          		<name>v.aula-snap-mvn</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.aula-snap-mvn</url>
+        	</repository>
+        
+        	<repository>
+          		<snapshots />
+          		<id>aula-rels-mvn</id>
+          		<name>v.aula-rels-mvn</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.aula-rels-mvn</url>
+        	</repository>
+      	</repositories>
+
+      	<pluginRepositories>
+	        <pluginRepository>
+	        	<snapshots>
+            		<enabled>false</enabled>
+          		</snapshots>
+          		<id>aula-snaps-mvn</id>
+          		<name>v.aula-snap-mvn</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.aula-snap-mvn</url>
+	        </pluginRepository>
+
+	        <pluginRepository>
+	        	<snapshots />
+          		<id>aula-rels-mvn</id>
+          		<name>v.aula-rels-mvn</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.aula-rels-mvn</url>
+	        </pluginRepository>
+      	</pluginRepositories>
+    </profile>
+
+    <profile>
+    	<id>aula-gdl</id>
+    	
+    	<repositories>
+        	<repository>
+          		<snapshots>
+            		<enabled>false</enabled>
+          		</snapshots>
+          		<id>aula-snaps-gdl</id>
+          		<name>v.aula-snap-gdl</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.aula-snap-gdl</url>
+        	</repository>
+        
+        	<repository>
+          		<snapshots />
+          		<id>aula-rels-gdl</id>
+          		<name>v.aula-rels-gdl</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.aula-rels-gdl</url>
+        	</repository>
+      	</repositories>
+
+      	<pluginRepositories>
+	        <pluginRepository>
+	        	<snapshots>
+            		<enabled>false</enabled>
+          		</snapshots>
+          		<id>aula-snaps-gdl</id>
+          		<name>v.aula-snap-gdl</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.aula-snap-gdl</url>
+	        </pluginRepository>
+
+	        <pluginRepository>
+	        	<snapshots />
+          		<id>aula-rels-gdl</id>
+          		<name>v.aula-rels-gdl</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.aula-rels-gdl</url>
+	        </pluginRepository>
+      	</pluginRepositories>
+    </profile>
+
+    <profile>
+    	<id>nego-mvn</id>
+    	
+    	<repositories>
+        	<repository>
+          		<snapshots>
+            		<enabled>false</enabled>
+          		</snapshots>
+          		<id>nego-snaps-mvn</id>
+          		<name>v.nego-snap-mvn</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.nego-snap-mvn</url>
+        	</repository>
+        
+        	<repository>
+          		<snapshots />
+          		<id>nego-rels-mvn</id>
+          		<name>v.nego-rels-mvn</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.nego-rels-mvn</url>
+        	</repository>
+      	</repositories>
+
+      	<pluginRepositories>
+	        <pluginRepository>
+	        	<snapshots>
+            		<enabled>false</enabled>
+          		</snapshots>
+          		<id>nego-snaps-mvn</id>
+          		<name>v.nego-snap-mvn</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.nego-snap-mvn</url>
+	        </pluginRepository>
+
+	        <pluginRepository>
+	        	<snapshots />
+          		<id>nego-rels-mvn</id>
+          		<name>v.nego-rels-mvn</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.nego-rels-mvn</url>
+	        </pluginRepository>
+      	</pluginRepositories>
+    </profile>
+
+    <profile>
+    	<id>nego-gdl</id>
+    	
+    	<repositories>
+        	<repository>
+          		<snapshots>
+            		<enabled>false</enabled>
+          		</snapshots>
+          		<id>nego-snaps-gdl</id>
+          		<name>v.nego-snap-gdl</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.nego-snap-gdl</url>
+        	</repository>
+        
+        	<repository>
+          		<snapshots />
+          		<id>nego-rels-gdl</id>
+          		<name>v.nego-rels-gdl</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.nego-rels-gdl</url>
+        	</repository>
+      	</repositories>
+
+      	<pluginRepositories>
+	        <pluginRepository>
+	        	<snapshots>
+            		<enabled>false</enabled>
+          		</snapshots>
+          		<id>nego-snaps-gdl</id>
+          		<name>v.nego-snap-gdl</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.nego-snap-gdl</url>
+	        </pluginRepository>
+
+	        <pluginRepository>
+	        	<snapshots />
+          		<id>nego-rels-gdl</id>
+          		<name>v.nego-rels-gdl</name>
+          		<url>http://10.51.145.42:8081/artifactory/v.nego-rels-gdl</url>
+	        </pluginRepository>
+      	</pluginRepositories>
+    </profile>
+  </profiles>
+
+  <activeProfiles>
+  	<activeProfile>aula-mvn</activeProfile>
+  	<activeProfile>aula-gdl</activeProfile>
+  	<activeProfile>nego-mvn</activeProfile>
+  	<activeProfile>nego-gdl</activeProfile>
+  </activeProfiles>
+</settings>
